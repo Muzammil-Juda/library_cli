@@ -7,6 +7,6 @@ class Book
   end
 
   def to_s
-    puts "#{@title} by #{@author}"
+    "#{@title} by #{@author}"
   end
 end
