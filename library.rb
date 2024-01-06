@@ -42,6 +42,8 @@ class Library
 
   def list_books
     puts "Books in the collection:"
-    @books.each(&:to_s)
+    @books.each do |book|
+      puts book
+    end
   end
 end
