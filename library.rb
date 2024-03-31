@@ -2,7 +2,7 @@ require_relative "book"
 
 class Library
   def initialize
-    @books = []
+   @books = []
   end
 
   def run
@@ -36,14 +36,16 @@ class Library
     title = gets.chomp
     print "Enter author name: "
     author = gets.chomp
-    @books << Book.new(title, author)
-    puts "Book added successfully!"
+    book = Book.new(title, author)
+    @books << book
+    puts book.add
   end
 
   def list_books
     puts "Books in the collection:"
     @books.each do |book|
-      puts book
+    puts book.to_s
+  
     end
   end
 end

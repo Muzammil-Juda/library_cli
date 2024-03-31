@@ -6,6 +6,10 @@ class Book
     @author = author
   end
 
+  def add
+    "Book added successfully!"
+  end
+  
   def to_s
     "#{@title} by #{@author}"
   end
